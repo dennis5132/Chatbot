@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.4">
   <diagram name="Pagina-1" id="DgbCpB3lsnm1m_4SGFxq">
-    <mxGraphModel dx="1226" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1489" dy="753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -57,14 +57,50 @@
         <mxCell id="jgbJSeuZmCzQMlDoHzdy-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jgbJSeuZmCzQMlDoHzdy-24" target="jgbJSeuZmCzQMlDoHzdy-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="jgbJSeuZmCzQMlDoHzdy-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jgbJSeuZmCzQMlDoHzdy-24" target="jgbJSeuZmCzQMlDoHzdy-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="jgbJSeuZmCzQMlDoHzdy-24" value="Ja?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="250" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jgbJSeuZmCzQMlDoHzdy-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jgbJSeuZmCzQMlDoHzdy-25" target="jgbJSeuZmCzQMlDoHzdy-36">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jgbJSeuZmCzQMlDoHzdy-25" value="Nee" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="480" y="870" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="jgbJSeuZmCzQMlDoHzdy-29" value="Gegevens worden uit geheugen gehaald" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="90" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jgbJSeuZmCzQMlDoHzdy-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jgbJSeuZmCzQMlDoHzdy-35" target="jgbJSeuZmCzQMlDoHzdy-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jgbJSeuZmCzQMlDoHzdy-35" value="Bot geeft antwoord, met gevraagde gegevens" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jgbJSeuZmCzQMlDoHzdy-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jgbJSeuZmCzQMlDoHzdy-36" target="jgbJSeuZmCzQMlDoHzdy-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jgbJSeuZmCzQMlDoHzdy-36" value="Bot reageert op commando zonder enkele gegevens van&amp;nbsp;&lt;div&gt;het geheugen&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jgbJSeuZmCzQMlDoHzdy-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jgbJSeuZmCzQMlDoHzdy-39" target="jgbJSeuZmCzQMlDoHzdy-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jgbJSeuZmCzQMlDoHzdy-39" value="gebruiker geeft geen reactie na 20-30 seconden" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jgbJSeuZmCzQMlDoHzdy-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jgbJSeuZmCzQMlDoHzdy-42" target="jgbJSeuZmCzQMlDoHzdy-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jgbJSeuZmCzQMlDoHzdy-42" value="Bot gaat op sleep mode" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jgbJSeuZmCzQMlDoHzdy-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="jgbJSeuZmCzQMlDoHzdy-44" target="jgbJSeuZmCzQMlDoHzdy-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jgbJSeuZmCzQMlDoHzdy-44" value="Gebruiker geeft commando" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1460" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
