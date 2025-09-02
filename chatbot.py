@@ -1,7 +1,7 @@
 import random
 from datetime import datetime
 # print("hallo")
-begroetingen = ["hallo","goedendag","hoi, hoe gaat het","welkom"]
+begroetingen = ["hallo","goedendag","hoi, hoe gaat het","welkom","goed je te zien"]
 grappen = ["Twee verliefde tieners zitten op een bankje. Het meisje vraagt aan de jongen: “Wil je zien waar ik aan mijn blindedarm ben geopereerd?” “Ja, graag!”, antwoordt de jongen enthousiast. “Daar, in dat grote gebouw met al die ramen…”",
            "Fred gaat naar de dokter. Hij loopt naar binnen en zegt: “Ik heb een bril nodig.”Waarop de dame achter de balie antwoord: “Inderdaad, want u staat nu in de kaaswinkel…”",
            "Een man komt bij de Chinees. De dame van de bediening komt en vraagt: ‘Wilt u menu?’ De man zegt: ‘Nou nee, liever na het eten.’",
