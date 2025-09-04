@@ -55,10 +55,12 @@ while running:
     print("- speel een spel")
     print("- start timer")
     print("- eindig programma")
+    
     command = input()
     askedQ += 1
     if askedQ > 3:
-          pickanswer(irritatie)
+        pickanswer(irritatie)
+    
     if command == "vertel een grap":
         pickanswer(grappen)
     elif command == "hoe laat is het":
@@ -88,7 +90,6 @@ while running:
                 print("jij wint")
             if rps2 == "schaar":
                 print("gelijk")
-
     elif command == "eindig programma":
         print("tot ziens")
         running = False
