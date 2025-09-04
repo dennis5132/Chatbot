@@ -44,7 +44,7 @@ def pickanswer(list):
 
    
 
-def pickanswer(begroetingen)
+
 while running:
 
     pickanswer(begroetingen)
