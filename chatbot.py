@@ -33,6 +33,7 @@ rps = ["steen","schaar","papier"]
 rpsstart = ["steen, papier, schaar:","steen, papier, schaar dan maar:", "ik kies steen, papier, schaar:", "steen, papier, schaar vindt ik altijd wel oké:"]
 commandoError = ["geen flauw idee wat dat is","kun je ook echte commando's geven?", "dat snap ik niet"]
 irritatie = ["tjonge, jij stelt veel vragen", "alweer een vraag?","nog eentje?","je kan niet stoppen met vragen, hé"]
+afsluit = ["doei","tot ziens","dat werd tijd","eindelijk rust"]
 now = datetime.now()
 running = True
 askedQ = 0
@@ -91,7 +92,7 @@ while running:
             if rps2 == "schaar":
                 print("gelijk")
     elif command == "eindig programma":
-        print("tot ziens")
+        pickanswer(afsluit)
         running = False
     else:
         print("sorry, dat commando ken ik niet")
