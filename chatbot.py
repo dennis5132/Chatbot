@@ -31,8 +31,10 @@ grappen = ["Twee verliefde tieners zitten op een bankje. Het meisje vraagt aan d
 rps = ["steen","schaar","papier"]
 rpsstart = ["steen, papier, schaar:","steen, papier, schaar dan maar:", "ik kies steen, papier, schaar:", "steen, papier, schaar vindt ik altijd wel oké:"]
 commandoError = ["geen flauw idee wat dat is","kun je ook echte commando's geven?", "dat snap ik niet"]
+irritatie = ["tjonge, jij stelt veel vragen", "alweer een vraag?","nog eentje?","je kan niet stoppen met vragen, hé"]
 now = datetime.now()
 running = True
+askedQ = 0
 
 def pickanswer(list):
     print(random.choice(list))
@@ -73,6 +75,9 @@ while running:
     print("- speel een spel")
     print("- eindig programma")
     command = input()
+    askedQ += 1
+    if askedQ > 3:
+          pickanswer(irritatie)
     if command == "vertel een grap":
         pickanswer(grapstart)
         pickanswer(grappen)
