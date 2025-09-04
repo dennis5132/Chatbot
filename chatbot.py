@@ -1,8 +1,9 @@
 import random
 from datetime import datetime
+import time
+
 # print("hallo")
-begroetingen = ["hallo","yo","hoi, hoe gaat het","welkom","goed je te zien", "ben je er weer"]
-grapstart = ["nou, hier is er eentje:", "als je de mijn grappen leuk vindt:", "hier gaat dan iets:"]
+begroetingen = ["hallo","goedendag","hoi, hoe gaat het","welkom","goed je te zien"]
 grappen = ["Twee verliefde tieners zitten op een bankje. Het meisje vraagt aan de jongen: “Wil je zien waar ik aan mijn blindedarm ben geopereerd?” “Ja, graag!”, antwoordt de jongen enthousiast. “Daar, in dat grote gebouw met al die ramen…”",
            "Fred gaat naar de dokter. Hij loopt naar binnen en zegt: “Ik heb een bril nodig.”Waarop de dame achter de balie antwoord: “Inderdaad, want u staat nu in de kaaswinkel…”",
            "Een man komt bij de Chinees. De dame van de bediening komt en vraagt: ‘Wilt u menu?’ De man zegt: ‘Nou nee, liever na het eten.’",
@@ -38,56 +39,58 @@ askedQ = 0
 
 def pickanswer(list):
     print(random.choice(list))
-def RPS():
-    rps1 = input("steen, papier, schaar:")
-    rps2 = random.choice(rps)
-    print(rps2)
-    if rps1 == "steen":
-        if rps2 == "steen":
-                print("gelijk")
-        if rps2 == "papier":
-                print("ik win")
-        if rps2 == "schaar":
-                print("jij wint")
-    elif rps1 == "papier":
-        if rps2 == "steen":
-                print("jij wint")
-        if rps2 == "papier":
-                print("gelijk")
-        if rps2 == "schaar":
-                print("ik win")
-    elif rps1 == "schaar":
-        if rps2 == "steen":
-                print("ik win")
-        if rps2 == "papier":
-                print("jij wint")
-        if rps2 == "schaar":
-                print("gelijk")
-    else:
-          print("kies steen, papier of schaar")
-          RPS()
 
-pickanswer(begroetingen)
+# timer functie
+
+   
+
+def pickanswer(begroetingen)
 while running:
+
+    pickanswer(begroetingen)
+
     print("wat wil je doen:")
     print("- vertel een grap")
     print("- hoe laat is het")
     print("- speel een spel")
+    print("- start timer")
     print("- eindig programma")
     command = input()
     askedQ += 1
     if askedQ > 3:
           pickanswer(irritatie)
     if command == "vertel een grap":
-        pickanswer(grapstart)
         pickanswer(grappen)
     elif command == "hoe laat is het":
         print("het is nu", now.hour,"uur en", now.minute,"minuten")
     elif command == "speel een spel":
-        RPS()
-       
+        rps1 = input("steen, papier, schaar:")
+        rps2 = random.choice(rps)
+        print(rps2)
+        if rps1 == "steen":
+            if rps2 == "steen":
+                print("gelijk")
+            if rps2 == "papier":
+                print("ik win")
+            if rps2 == "schaar":
+                print("jij wint")
+        elif rps1 == "papier":
+            if rps2 == "steen":
+                print("jij wint")
+            if rps2 == "papier":
+                print("gelijk")
+            if rps2 == "schaar":
+                print("ik win")
+        elif rps1 == "schaar":
+            if rps2 == "steen":
+                print("ik win")
+            if rps2 == "papier":
+                print("jij wint")
+            if rps2 == "schaar":
+                print("gelijk")
+
     elif command == "eindig programma":
         print("tot ziens")
         running = False
     else:
-        pickanswer(commandoError)
+        print("sorry, dat commando ken ik niet")
