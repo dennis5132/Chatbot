@@ -82,8 +82,7 @@ while running:
                 print("jij wint")
             if rps2 == "schaar":
                 print("gelijk")
-    elif command == "start timer":
-        timer()
+
     elif command == "eindig programma":
         print("tot ziens")
         running = False
