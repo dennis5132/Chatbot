@@ -54,7 +54,6 @@ while running:
     print("- vertel een grap")
     print("- hoe laat is het")
     print("- speel een spel")
-    print("- start timer")
     print("- eindig programma")
     
     command = input()
