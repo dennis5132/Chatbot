@@ -37,36 +37,42 @@ afsluit = ["doei","tot ziens","dat werd tijd","eindelijk rust"]
 now = datetime.now()
 running = True
 askedQ = 0
+herinneraar = 0
+moetherinneren = False
 
 def pickanswer(list):
     print(random.choice(list))
 
 # timer functie
 
-   
+pickanswer(begroetingen)
 
 
 while running:
-
-    pickanswer(begroetingen)
 
     print("wat wil je doen:")
     print("- vertel een grap")
     print("- hoe laat is het")
     print("- speel een spel")
+    print("- herinner me aan iets")
     print("- eindig programma")
     
     command = input()
     askedQ += 1
+    herinneraar += 1
     if askedQ > 3:
         pickanswer(irritatie)
+    if herinneraar > 3 and moetherinneren == True:
+        print("ik moest je nog herinneren aan iets:", herinnering)
+        herinneraar = 0
     
     if command == "vertel een grap":
         pickanswer(grappen)
     elif command == "hoe laat is het":
         print("het is nu", now.hour,"uur en", now.minute,"minuten")
     elif command == "speel een spel":
-        rps1 = input("steen, papier, schaar:")
+        pickanswer(rpsstart)
+        rps1 = input()
         rps2 = random.choice(rps)
         print(rps2)
         if rps1 == "steen":
@@ -93,5 +99,8 @@ while running:
     elif command == "eindig programma":
         pickanswer(afsluit)
         running = False
+    elif command == "herinner me aan iets":
+        moetherinneren = True
+        herinnering = input("waaraan?:")
     else:
         print("sorry, dat commando ken ik niet")
