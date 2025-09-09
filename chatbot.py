@@ -55,6 +55,7 @@ while running:
     print("- hoe laat is het")
     print("- speel een spel")
     print("- eindig programma")
+    print("- herinner mij aan iets")
     
     command = input()
     askedQ += 1
