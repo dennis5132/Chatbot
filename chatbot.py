@@ -1,5 +1,6 @@
 import random
 from datetime import datetime
+import _json
 
 # alle commands
 begroetingen = ["hallo","goedendag","hoi, hoe gaat het","welkom","goed je te zien"]
@@ -20,6 +21,9 @@ herinneringen = []
 # kiest ie een willekeurig antwoord
 def pickanswer(lst):
     print(random.choice(lst))
+
+with open("geheugen.json" "r") as f:
+    herinnering = _json.load(f)
 
 pickanswer(begroetingen)
 
@@ -64,21 +68,21 @@ while running:
 
     elif command == "herinner me aan iets":
         ding = input("waaraan moet ik je herinneren?: ")
-        herinneringen.append(ding)
+        herinnering.append(ding)
         print("oké, ik onthoud:", ding)
 
     elif command == "toon herinneringen":
-        if herinneringen:
+        if herinnering:
             print("Dit zijn je herinneringen:")
-            for h in herinneringen:
+            for h in herinnering:
                 print("-", h)
         else:
             print("Je hebt nog geen herinneringen.")
 
     elif command == "eindig programma":
-        if herinneringen:  # eerst herinneringen tonen
+        if herinnering:  # eerst herinneringen tonen
             print("Ojah, vergeet niet:")
-            for h in herinneringen:
+            for h in herinnering:
                 print("-", h)
                 # dan sluit het progamma af
         pickanswer(afsluit)
@@ -88,7 +92,8 @@ while running:
         pickanswer(commandoError)
 
     # Herinneringen check (blijven staan)
-    if herinneringen and command != "herinner me aan iets" and command != "toon herinneringen" and command != "eindig programma":
+    if herinnering and command != "herinner me aan iets" and command != "toon herinneringen" and command != "eindig programma":
         print("Ik onthoud nog steeds:")
-        for ding in herinneringen:
+        for ding in herinnering:
             print("-", ding)
+
