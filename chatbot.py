@@ -1,6 +1,6 @@
 import random
 from datetime import datetime
-import _json
+import json
 
 # alle commands
 begroetingen = ["hallo","goedendag","hoi, hoe gaat het","welkom","goed je te zien"]
@@ -22,8 +22,12 @@ herinneringen = []
 def pickanswer(lst):
     print(random.choice(lst))
 
-with open("geheugen.json" "r") as f:
-    herinnering = _json.load(f)
+try:
+    with open("geheugen.JSON", "r") as f:
+        herinnering = json.load(f)
+except (FileNotFoundError, json.JSONDecodeError):
+    herinnering = []
+
 
 pickanswer(begroetingen)
 
