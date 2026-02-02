@@ -26,7 +26,8 @@ try:
     with open("geheugen.JSON", "r") as f:
         herinnering = json.load(f)
 except (FileNotFoundError, json.JSONDecodeError):
-    herinnering = []
+    herinnering = ["test"]
+    
 
 
 pickanswer(begroetingen)
